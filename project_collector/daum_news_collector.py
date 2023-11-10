@@ -15,6 +15,8 @@
 import requests                # 전체 소스코드
 from bs4 import BeautifulSoup  # 원하는 정보 SELECT
 from service.service_news import get_news
+
+
 count = 0  # 전체 기사수
 page =1 # 시작 페이지 1로 고정
 print("=" * 150)
@@ -67,4 +69,5 @@ while True:
 
     else:
         print("잘못된 URL 경로입니다. 확인 부탁드립니다.")
-    page +=1
+
+    page += 1
